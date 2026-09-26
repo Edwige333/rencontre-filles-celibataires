@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Rencontre des Filles Célibataires — plateforme de rencontres en France pour adultes.">
+<title>Rencontre des Filles Célibataires</title>
+<style>
+:root{--pink:#e83e72;--pink2:#ff6f9a;--dark:#21151b;--muted:#746a70;--bg:#fff7fa;--card:#fff;--line:#f0dfe5;--green:#168a63}
+*{box-sizing:border-box}body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,sans-serif;color:var(--dark);background:var(--bg)}
+a{text-decoration:none;color:inherit}.nav{height:68px;background:#fff;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;padding:0 6%;position:sticky;top:0;z-index:10}.brand{font-weight:800;font-size:20px;color:var(--pink)}.navlinks{display:flex;gap:20px;align-items:center}.btn{border:0;border-radius:12px;padding:12px 18px;font-weight:700;cursor:pointer}.btn-primary{background:var(--pink);color:#fff}.btn-light{background:#fff0f4;color:var(--pink)}.hero{padding:72px 6% 55px;display:grid;grid-template-columns:1.1fr .9fr;gap:45px;align-items:center;max-width:1200px;margin:auto}.hero h1{font-size:clamp(38px,6vw,68px);line-height:1.02;margin:12px 0}.hero p{font-size:19px;color:var(--muted);line-height:1.6}.badge{display:inline-block;background:#ffe6ee;color:var(--pink);padding:8px 12px;border-radius:999px;font-weight:800}.hero-card{background:linear-gradient(145deg,#fff,#ffe9f0);border-radius:30px;padding:28px;box-shadow:0 18px 50px #d88da922}.profiles{display:grid;grid-template-columns:repeat(2,1fr);gap:15px}.mini{background:#fff;border-radius:20px;overflow:hidden;border:1px solid #f4dfe6}.mini .photo{height:180px;background:linear-gradient(135deg,#f6a8bd,#ffd8e3);display:grid;place-items:center;font-size:60px}.mini div:last-child{padding:12px}.section{max-width:1200px;margin:auto;padding:55px 6%}.section h2{font-size:34px;margin:0 0 25px}.features{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.feature,.card{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:22px}.feature b{display:block;margin:10px 0 6px}.muted{color:var(--muted)}.app{display:none;max-width:1200px;margin:auto;padding:25px 6% 60px}.app.active{display:block}.tabs{display:flex;gap:8px;overflow:auto;margin-bottom:22px}.tab{background:#fff;border:1px solid var(--line);padding:11px 15px;border-radius:999px;cursor:pointer;white-space:nowrap}.tab.active{background:var(--pink);color:#fff;border-color:var(--pink)}.view{display:none}.view.active{display:block}.form{max-width:620px;margin:auto;background:#fff;border:1px solid var(--line);border-radius:24px;padding:28px}.field{margin:13px 0}.field label{display:block;font-weight:700;margin-bottom:7px}.field input,.field select,.field textarea{width:100%;padding:13px;border:1px solid #e6d5db;border-radius:12px;font:inherit}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.profile{background:#fff;border:1px solid var(--line);border-radius:22px;overflow:hidden}.profile .avatar{height:220px;background:linear-gradient(135deg,#f7b0c4,#ffe0e8);display:grid;place-items:center;font-size:75px}.profile .body{padding:17px}.actions{display:flex;gap:8px;margin-top:12px}.searchbar{display:grid;grid-template-columns:1fr 1fr 1fr auto;gap:10px;margin-bottom:20px}.chat{display:grid;grid-template-columns:280px 1fr;min-height:430px;background:#fff;border:1px solid var(--line);border-radius:22px;overflow:hidden}.chatlist{border-right:1px solid var(--line);padding:15px}.person{padding:13px;border-radius:14px;cursor:pointer}.person.selected{background:#fff0f4}.conversation{display:flex;flex-direction:column}.messages{flex:1;padding:20px;background:#fffafd}.bubble{max-width:70%;padding:11px 14px;border-radius:16px;margin:8px 0;background:#f1e8eb}.bubble.me{margin-left:auto;background:#ffdce7}.compose{display:flex;gap:8px;padding:12px;border-top:1px solid var(--line)}.compose input{flex:1;padding:12px;border:1px solid var(--line);border-radius:12px}.admin-table{width:100%;border-collapse:collapse;background:#fff;border-radius:16px;overflow:hidden}.admin-table th,.admin-table td{padding:13px;border-bottom:1px solid var(--line);text-align:left}.footer{background:#21151b;color:#fff;padding:35px 6%;margin-top:30px}.modal{display:none;position:fixed;inset:0;background:#0007;z-index:30;place-items:center;padding:20px}.modal.open{display:grid}.modalbox{background:#fff;border-radius:22px;padding:25px;max-width:480px;width:100%}.toast{position:fixed;bottom:20px;right:20px;background:#21151b;color:#fff;padding:14px 18px;border-radius:12px;display:none;z-index:40}.toast.show{display:block}@media(max-width:800px){.navlinks a:not(.btn){display:none}.hero{grid-template-columns:1fr;padding-top:45px}.features{grid-template-columns:1fr 1fr}.grid{grid-template-columns:1fr 1fr}.searchbar{grid-template-columns:1fr 1fr}.chat{grid-template-columns:1fr}.chatlist{display:none}}@media(max-width:520px){.features,.grid{grid-template-columns:1fr}.hero-card{padding:16px}.profiles{grid-template-columns:1fr 1fr}.mini .photo{height:140px}}
+</style>
+</head>
+<body>
+<nav class="nav">
+  <div class="brand">💕 Rencontre des Filles Célibataires</div>
+  <div class="navlinks">
+    <a href="#accueil">Accueil</a><a href="#securite">Sécurité</a>
+    <button class="btn btn-light" onclick="openAuth('login')">Connexion</button>
+    <a href="inscription/" class="btn btn-primary register-link">Créer un compte</a>
+  </div>
+</nav>
+
+<main id="public">
+<section class="hero" id="accueil">
+  <div>
+    <span class="badge">🇫🇷 Rencontres en France · 18+</span>
+    <h1>Faites une belle rencontre, simplement. ❤️</h1>
+    <p>Découvrez des célibataires, échangez et faites connaissance dans un espace pensé pour les adultes.</p>
+    <a href="inscription/" class="register-link"<button class="btn btn-primary" onclick="openAuth('signup')">Créer mon profil gratuitement</a>
+    <p class="muted" style="font-size:13px">Inscription gratuite. Certaines fonctionnalités futures pourront être proposées en option.</p>
+  </div>
+  <div class="hero-card">
+    <h3>Des profils à découvrir</h3>
+    <div class="profiles">
+      <div class="mini"><div class="photo">👩🏻</div><div><b>Camille, 28</b><br><span class="muted">Paris</span></div></div>
+      <div class="mini"><div class="photo">👩🏽</div><div><b>Julie, 31</b><br><span class="muted">Lyon</span></div></div>
+      <div class="mini"><div class="photo">👨🏻</div><div><b>Thomas, 30</b><br><span class="muted">Bordeaux</span></div></div>
+      <div class="mini"><div class="photo">👨🏾</div><div><b>Lucas, 34</b><br><span class="muted">Nantes</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+<h2>Tout ce qu'il faut pour faire connaissance</h2>
+<div class="features">
+<div class="feature">🔎<b>Découvrir</b><span class="muted">Recherche par âge, ville et type de rencontre.</span></div>
+<div class="feature">❤️<b>Likes & matchs</b><span class="muted">Un match quand l'intérêt est réciproque.</span></div>
+<div class="feature">💬<b>Messagerie</b><span class="muted">Discutez avec vos matchs.</span></div>
+<div class="feature">🛡️<b>Sécurité</b><span class="muted">Bloquez et signalez les profils suspects.</span></div>
+</div>
+</section>
+
+<section class="section" id="securite">
+<div class="card">
+<h2>🛡️ Votre sécurité d'abord</h2>
+<p class="muted">Ne transmettez jamais vos mots de passe, coordonnées bancaires ou documents personnels à un autre membre. Ne versez jamais d'argent à une personne rencontrée en ligne. Utilisez les fonctions de blocage et de signalement en cas de comportement suspect.</p>
+</div>
+</section>
+</main>
+
+<section class="app" id="app">
+<h2>Bonjour 👋</h2>
+<div class="tabs">
+<button class="tab active" data-view="discover">🔎 Découvrir</button>
+<button class="tab" data-view="likes">❤️ Mes likes</button>
+<button class="tab" data-view="matches">💕 Mes matchs</button>
+<button class="tab" data-view="messages">💬 Messages</button>
+<button class="tab" data-view="profile">👤 Mon profil</button>
+<button class="tab" data-view="admin">⚙️ Admin</button>
+<button class="tab" data-view="settings">⚙️ Paramètres</button>
+<button class="tab" onclick="logout()">🚪 Déconnexion</button>
+</div>
+
+<div class="view active" id="discover">
+<div class="searchbar">
+<select id="genderFilter"><option value="">Tous</option><option>Femme</option><option>Homme</option></select>
+<select id="cityFilter"><option value="">Toutes les villes</option><option>Paris</option><option>Lyon</option><option>Bordeaux</option><option>Nantes</option></select>
+<select id="ageFilter"><option value="">Tous les âges</option><option value="25">18–25</option><option value="35">26–35</option><option value="50">36+</option></select>
+<button class="btn btn-primary" onclick="filterProfiles()">Rechercher</button>
+</div>
+<div class="grid" id="profileGrid"></div>
+</div>
+
+<div class="view" id="likes"><div class="card"><h2>❤️ Mes likes</h2><div id="likesList" class="grid"></div></div></div>
+<div class="view" id="matches"><div class="card"><h2>💕 Mes matchs</h2><div id="matchesList" class="grid"></div></div></div>
+
+<div class="view" id="messages">
+<div class="chat"><div class="chatlist">
+<div class="person selected"><b>Julie, 31</b><br><span class="muted">Lyon</span></div>
+<div class="person"><b>Camille, 28</b><br><span class="muted">Paris</span></div>
+</div><div class="conversation"><div class="messages" id="messagesBox">
+<div class="bubble">Bonjour 😊</div><div class="bubble me">Bonjour Julie, ravi de faire connaissance !</div>
+</div><div class="compose"><input id="messageInput" placeholder="Écrire un message…"><button class="btn btn-primary" onclick="sendMessage()">Envoyer</button></div></div></div>
+</div>
+
+<div class="view" id="profile"><div class="form">
+<h2>👤 Mon profil</h2>
+<div class="field"><label>Prénom ou pseudo</label><input value="Mon profil"></div>
+<div class="field"><label>Ville</label><input value="Paris"></div>
+<div class="field"><label>Je recherche</label><select><option>Relation sérieuse</option><option>Rencontre</option><option>Amitié</option></select></div>
+<div class="field"><label>Présentation</label><textarea rows="5">Bonjour, je souhaite faire connaissance avec des personnes sérieuses.</textarea></div>
+<button class="btn btn-primary" onclick="toast('Profil enregistré')">Enregistrer</button>
+</div></div>
+
+<div class="view" id="settings"><div class="form"><h2>⚙️ Paramètres</h2>
+<p><label><input type="checkbox" checked> Recevoir les notifications</label></p>
+<p><label><input type="checkbox" checked> Afficher mon profil dans les recherches</label></p>
+<button class="btn btn-light" onclick="toast('Préférences enregistrées')">Enregistrer</button>
+<button class="btn" style="background:#ffe8e8;color:#b42318;margin-left:8px" onclick="toast('Demande de suppression enregistrée')">Supprimer mon compte</button>
+</div></div>
+
+<div class="view" id="admin"><div class="card">
+<h2>⚙️ Administration — démonstration</h2>
+<p class="muted">Cette zone est une maquette. Dans la version de production, elle devra être protégée par une authentification administrateur côté serveur.</p>
+<table class="admin-table"><thead><tr><th>Membre</th><th>Ville</th><th>Statut</th><th>Action</th></tr></thead>
+<tbody id="adminRows"></tbody></table>
+</div></div>
+</section>
+
+<footer class="footer">
+<b>💕 Rencontre des Filles Célibataires</b>
+<p>Plateforme de rencontres destinée aux personnes majeures.</p>
+<p><a href="#" onclick="legal('conditions');return false">Conditions</a> · <a href="#" onclick="legal('confidentialite');return false">Confidentialité</a> · <a href="#" onclick="legal('securite');return false">Sécurité</a> · <a href="#" onclick="legal('contact');return false">Contact</a></p>
+</footer>
+
+<div class="modal" id="authModal"><div class="modalbox">
+<button style="float:right;border:0;background:none;font-size:24px;cursor:pointer" onclick="closeAuth()">×</button>
+<div id="loginForm">
+<h2>Connexion</h2><div class="field"><label>E-mail</label><input type="email" id="loginEmail"></div><div class="field"><label>Mot de passe</label><input type="password" id="loginPass"></div>
+<button class="btn btn-primary" style="width:100%" onclick="login()">Se connecter</button><p class="muted">Pas encore de compte ? <a href="inscription/">Créer un compte</a></p>
+</div>
+</div></div><div class="toast" id="toast"></div>
+
+<script>
+const profiles=[
+{id:1,name:"Camille",age:28,gender:"Femme",city:"Paris",emoji:"👩🏻",bio:"Simple, souriante et ouverte à une belle rencontre."},
+{id:2,name:"Julie",age:31,gender:"Femme",city:"Lyon",emoji:"👩🏽",bio:"J'aime les sorties, les voyages et les discussions sincères."},
+{id:3,name:"Thomas",age:30,gender:"Homme",city:"Bordeaux",emoji:"👨🏻",bio:"À la recherche d'une relation sérieuse."},
+{id:4,name:"Lucas",age:34,gender:"Homme",city:"Nantes",emoji:"👨🏾",bio:"Calme, sportif et prêt à faire connaissance."},
+{id:5,name:"Élodie",age:24,gender:"Femme",city:"Nantes",emoji:"👩🏼",bio:"J'aime la musique et les nouvelles rencontres."},
+{id:6,name:"Antoine",age:39,gender:"Homme",city:"Paris",emoji:"👨🏼",bio:"Je souhaite rencontrer quelqu'un avec qui construire."}
+];
+let likes=JSON.parse(localStorage.getItem("likes")||"[]"), logged=localStorage.getItem("logged")==="1";
+
+function toast(msg){const t=document.getElementById("toast");t.textContent=msg;t.classList.add("show");setTimeout(()=>t.classList.remove("show"),2200)}
+function openAuth(type){document.getElementById("authModal").classList.add("open");document.getElementById("loginForm").style.display=type==="login"?"block":"none";document.getElementById("signupForm").style.display=type==="signup"?"block":"none"}
+function closeAuth(){document.getElementById("authModal").classList.remove("open")}
+function signup(){
+ const name=document.getElementById("signupName").value.trim(),email=document.getElementById("signupEmail").value.trim(),birth=document.getElementById("signupBirth").value,adult=document.getElementById("adult").checked;
+ if(!name||!email||!birth||!adult){toast("Veuillez compléter les champs obligatoires.");return}
+ const age=(Date.now()-new Date(birth))/31557600000;if(age<18){toast("L'inscription est réservée aux 18 ans et plus.");return}
+ localStorage.setItem("logged","1");logged=true;closeAuth();showApp();toast("Bienvenue "+name+" ❤️");
+}
+function login(){localStorage.setItem("logged","1");logged=true;closeAuth();showApp();toast("Connexion réussie");}
+function logout(){localStorage.removeItem("logged");logged=false;document.getElementById("app").classList.remove("active");document.getElementById("public").style.display="block";location.hash="accueil";toast("Vous êtes déconnecté");}
+function showApp(){document.getElementById("public").style.display="none";document.getElementById("app").classList.add("active");renderProfiles();renderLikes();renderMatches();renderAdmin()}
+function renderProfiles(list=profiles){
+ const g=document.getElementById("profileGrid");g.innerHTML=list.map(p=>`<div class="profile"><div class="avatar">${p.emoji}</div><div class="body"><h3>${p.name}, ${p.age}</h3><div class="muted">📍 ${p.city} · ${p.gender}</div><p>${p.bio}</p><div class="actions"><button class="btn btn-light" onclick="like(${p.id})">❤️ J'aime</button><button class="btn" style="background:#f5eef1" onclick="toast('Ouverture du profil de ${p.name}')">Voir</button><button class="btn" style="background:#f5eef1" onclick="toast('Profil signalé')">⚠️</button></div></div></div>`).join("");
+}
+function like(id){if(!likes.includes(id))likes.push(id);localStorage.setItem("likes",JSON.stringify(likes));toast("Profil ajouté à vos likes ❤️");renderLikes();renderMatches()}
+function renderLikes(){document.getElementById("likesList").innerHTML=profiles.filter(p=>likes.includes(p.id)).map(p=>`<div class="card"><b>${p.emoji} ${p.name}, ${p.age}</b><p class="muted">${p.city}</p><button class="btn btn-primary" onclick="toast('Message ouvert')">💬 Écrire</button></div>`).join("")||'<p class="muted">Vous n’avez pas encore de likes.</p>'}
+function renderMatches(){document.getElementById("matchesList").innerHTML=profiles.filter(p=>likes.includes(p.id)).slice(0,2).map(p=>`<div class="card"><b>💕 Match avec ${p.name}</b><p class="muted">${p.city}</p><button class="btn btn-primary" onclick="document.querySelector('[data-view=messages]').click()">💬 Discuter</button></div>`).join("")||'<p class="muted">Vos matchs apparaîtront ici.</p>'}
+function filterProfiles(){const g=document.getElementById("genderFilter").value,c=document.getElementById("cityFilter").value,a=document.getElementById("ageFilter").value;let list=profiles.filter(p=>(!g||p.gender===g)&&(!c||p.city===c)&&(!a||(a==="25"?p.age<=25:a==="35"?p.age>=26&&p.age<=35:p.age>=36)));renderProfiles(list)}
+function sendMessage(){const i=document.getElementById("messageInput"),v=i.value.trim();if(!v)return;const b=document.createElement("div");b.className="bubble me";b.textContent=v;document.getElementById("messagesBox").appendChild(b);i.value="";document.getElementById("messagesBox").scrollTop=99999}
+function renderAdmin(){document.getElementById("adminRows").innerHTML=profiles.map(p=>`<tr><td>${p.name}</td><td>${p.city}</td><td>Actif</td><td><button class="btn btn-light" onclick="toast('Action de modération')">Modérer</button></td></tr>`).join("")}
+function legal(type){const texts={conditions:"Conditions d'utilisation : service destiné aux personnes majeures. Respect, sécurité et interdiction des comportements frauduleux sont obligatoires.",confidentialite:"Politique de confidentialité : en production, cette page devra détailler les données collectées, leurs finalités, durées de conservation et droits des utilisateurs.",securite:"Sécurité : ne partagez jamais d'informations sensibles et signalez les comportements suspects.",contact:"Contact : ajoutez ici l'adresse e-mail officielle du service."};alert(texts[type])}
+document.querySelectorAll(".tab").forEach(t=>t.addEventListener("click",()=>{if(!t.dataset.view)return;document.querySelectorAll(".tab").forEach(x=>x.classList.remove("active"));t.classList.add("active");document.querySelectorAll(".view").forEach(v=>v.classList.remove("active"));document.getElementById(t.dataset.view).classList.add("active")}));
+if(logged)showApp();
+</script>
+</body>
+</html>
